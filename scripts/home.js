@@ -138,3 +138,13 @@ document.getElementById('wdd-courses-btn').addEventListener('click', () => {
     displayCourses(wddCourses);
 });
 
+// Hamburger menu
+
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+

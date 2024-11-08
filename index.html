@@ -21,16 +21,23 @@
 <body>
     <header>
         <div class="me">
-            <img src="images/myPicture.jpg" alt="My Picture" height="200" loading="lazy"/> 
+            <img src="images/myPicture.jpg" alt="Lucio Boccazzi Portrait" height="200" loading="lazy"/>
             <h1>Lucio O. Boccazzi</h1>
         </div>
 
         <nav class="navigation modern">
-            <a href="" title="Home">Home</a>
-            <a href="" title="Chamber">Chamber</a>
-            <a href="" title="GitHub Profile">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/lucio-omar-boccazzi-993576190/" title="LinkedIn">LinkedIn</a>
-        </nav>
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="" title="Home">Home</a>
+                <a href="" title="Chamber">Chamber</a>
+                <a href="" title="GitHub Profile">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/lucio-omar-boccazzi-993576190/" title="LinkedIn">LinkedIn</a>
+            </div>
+        </nav>        
 
     </header>
 
@@ -41,7 +48,7 @@
     
         <section class="card2">
             <h2>Buenos Aires, Argentina</h2>
-            <img src="images/flag.png" alt="My Flag" height="150" loading="lazy"/> 
+            <img src="images/flag.png" alt="Flag of Argentina" height="150" loading="lazy"/>
             <h4>Official Flag of Argentina</h4>
         </section>
 
@@ -60,8 +67,8 @@
 
     <footer>
         <p>© <span id="year"></span> - Lucio Boccazzi - Argentina</p>
-        <p>Last Modification:<p id="lastModified"></p>
-    </footer>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>    
     
 </body>
 </html>
