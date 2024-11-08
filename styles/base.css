@@ -86,7 +86,9 @@ main {
 }
 
 .card3 {
-	background-color: rgb(94, 130, 236);
+    grid-column: 1 / 4; 
+    background-color: rgb(94, 130, 236);
+    padding: 20px;
 }
 
 h2 {
@@ -166,3 +168,96 @@ footer {
         padding: 1rem;
     }
 }
+
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 1rem;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.course-card.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
+}
+
+.course-card.completed h3 {
+    color: #155724;
+}
+
+.course-card.completed p {
+    color: #3c763d;
+}
+
+@media screen and (max-width: 768px) {
+    #course-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #course-list {
+        grid-template-columns: 1fr; 
+    }
+}
+
+#filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#filter-buttons button {
+    background-color: #21075f; 
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#filter-buttons button:hover {
+    background-color: #5a3d99;
+    transform: translateY(-3px);
+}
+
+#filter-buttons button.active {
+    background-color: #ffcc00;
+    color: #21075f; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+#filter-buttons button:focus {
+    outline: 2px solid #ffcc00; 
+    outline-offset: 2px;
+}
+
