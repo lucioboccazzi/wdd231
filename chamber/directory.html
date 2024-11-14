@@ -24,10 +24,23 @@
     <meta property="og:url" content="" />
     <meta name="twitter:url" content="" />
 
+    <!-- Styles, Scripts and Fonts -->
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css"/>
+    
+    <script src="scripts/directory.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
+
+        <h1>Chamber of Commerce - CABA</h1>
 
         <div class="nav-links" id="nav-links">
             <a href="" title="Home">Home</a>
@@ -39,11 +52,50 @@
     </header>
 
     <main>
+        <div class="card-grid">
+            <!-- Event Card -->
+            <div class="card event-card">
+                <h2>Event</h2>
+                <p>Upcoming event details go here...</p>
+            </div>
+    
+            <!-- Weather Card -->
+            <div class="card weather-card">
+                <h2>Weather</h2>
+                <p>Weather conditions will be displayed here.</p>
+            </div>
+    
+            <!-- Forecast Card -->
+            <div class="card forecast-card">
+                <h2>Forecast</h2>
+                <p>Weather forecast for the week ahead.</p>
+            </div>
+    
+            <!-- Small Business Card 1 -->
+            <div class="card business-card">
+                <h2>Business 1</h2>
+                <p>Business details and info here.</p>
+            </div>
+    
+            <!-- Small Business Card 2 -->
+            <div class="card business-card">
+                <h2>Business 2</h2>
+                <p>Business details and info here.</p>
+            </div>
+    
+            <!-- Small Business Card 3 -->
+            <div class="card business-card">
+                <h2>Business 3</h2>
+                <p>Business details and info here.</p>
+            </div>
+        </div>
 
     </main>
 
     <footer>
-
+        <p>Contact Information: cabacommerce@gmail.com</p>
+        <p>© <span id="year"></span> - Lucio Boccazzi - Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
     
 </body>
