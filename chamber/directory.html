@@ -4,28 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Directory Page</title>
-    <meta
-        name="description"
-        content="WDD 231 - Chamber of Commerce. Lucio Boccazzi. This page is a Home to the Chamber of Commerce." />
+    <meta name="description" content="WDD 231 - Chamber of Commerce. Lucio Boccazzi. This page is a Home to the Chamber of Commerce." />
     <meta name="author" content="Lucio Boccazzi" />
-
     <link rel="icon" href="favicon.ico">
 
     <!-- Social media meta tags -->
     <meta property="og:title" content="CABA - Chamber of Commerce" />
     <meta name="twitter:title" content="CABA - Chamber of Commerce" />
-    
     <meta property="og:type" content="website"/>
     <meta name="twitter:card" content="summary_large_image" />
-    
     <meta property="og:image" href="images/CABA-image.jpg" />
     <meta name="twitter:image" href="images/CABA-image.jpg" />
-    
     <meta property="og:url" content="" />
     <meta name="twitter:url" content="" />
 
     <!-- Styles, Scripts and Fonts -->
-
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/directory.css"/>
 
@@ -36,24 +29,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
     <header>
-
         <h1>Chamber of Commerce - CABA</h1>
-
         <div class="nav-links" id="nav-links">
             <a href="" title="Home">Home</a>
             <a href="" title="Discover">Discover</a>
             <a href="" title="Directory">Directory</a>
             <a href="" title="Join">Join</a>
         </div>
-
     </header>
 
     <main>
+
         <div class="card-grid">
-            <!-- Event Card -->
             <div class="card event-card">
                 <h2>Event</h2>
                 <p>Upcoming event details go here...</p>
@@ -89,6 +78,20 @@
                 <p>Business details and info here.</p>
             </div>
         </div>
+        </div>
+
+        <h1>Company Members</h1>
+        <!-- Button to toggle view between grid and list -->
+        <div>
+            <button id="toggle-view" class="toggle-view-btn">Switch to List View</button>
+        </div>
+
+        <!-- Member container where the cards will be displayed -->
+        <div id="members-container">
+            <!-- Member cards will be populated here by JavaScript -->
+        </div>
+
+
 
     </main>
 
@@ -97,6 +100,5 @@
         <p>© <span id="year"></span> - Lucio Boccazzi - Argentina</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    
 </body>
 </html>
