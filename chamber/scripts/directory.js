@@ -5,6 +5,7 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 var lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = lastModified;
 
+// functions
 async function fetchMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -21,11 +22,11 @@ async function fetchMembers() {
 
 function displayMembers(members) {
     const container = document.getElementById('members-container');
-    container.innerHTML = '';  // Clear the container before displaying new data
+    container.innerHTML = '';  
 
     members.forEach(member => {
         const memberCard = document.createElement('div');
-        memberCard.classList.add('member-card');  // Add the card class for styling
+        memberCard.classList.add('member-card');  
 
         memberCard.innerHTML = `
             <img src="images/${member.image}" alt="${member.name} logo" class="member-logo">
@@ -37,7 +38,7 @@ function displayMembers(members) {
             <p><strong>Additional Info:</strong> ${member.additional_info || 'No additional information available.'}</p>
         `;
 
-        container.appendChild(memberCard);  // Add the card to the container
+        container.appendChild(memberCard);  
     });
 }
 
@@ -50,24 +51,22 @@ function getMembershipLevel(level) {
     }
 }
 
-// Toggle view between grid and list
 document.getElementById('toggle-view').addEventListener('click', function() {
     const container = document.getElementById('members-container');
-    const currentView = container.classList.contains('grid-view');  // Check if current view is grid
+    const currentView = container.classList.contains('grid-view');  
 
     if (currentView) {
-        container.classList.remove('grid-view');  // Switch to list view
+        container.classList.remove('grid-view');  
         container.classList.add('list-view');
-        this.textContent = 'Switch to Grid View';  // Change button text
+        this.textContent = 'Switch to Grid View';  
     } else {
-        container.classList.remove('list-view');  // Switch to grid view
+        container.classList.remove('list-view');  
         container.classList.add('grid-view');
-        this.textContent = 'Switch to List View';  // Change button text
+        this.textContent = 'Switch to List View';  
     }
 });
 
-// Ensure members are fetched and displayed in grid view initially
 window.onload = function() {
     fetchMembers();
-    document.getElementById('members-container').classList.add('grid-view');  // Default to grid view
+    document.getElementById('members-container').classList.add('grid-view');  
 };
