@@ -53,16 +53,16 @@ function getMembershipLevel(level) {
 
 document.getElementById('toggle-view').addEventListener('click', function() {
     const container = document.getElementById('members-container');
-    const currentView = container.classList.contains('grid-view');  
+    const currentView = container.classList.contains('grid-view');
 
     if (currentView) {
-        container.classList.remove('grid-view');  
+        container.classList.remove('grid-view');
         container.classList.add('list-view');
-        this.textContent = 'Switch to Grid View';  
+        this.textContent = 'Switch to Grid View';
     } else {
-        container.classList.remove('list-view');  
+        container.classList.remove('list-view');
         container.classList.add('grid-view');
-        this.textContent = 'Switch to List View';  
+        this.textContent = 'Switch to List View';
     }
 });
 
