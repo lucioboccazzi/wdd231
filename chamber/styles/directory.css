@@ -193,6 +193,7 @@ main {
     margin: 10px 0;
 }
 
+
 @media (max-width: 1024px) {
     .card-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
