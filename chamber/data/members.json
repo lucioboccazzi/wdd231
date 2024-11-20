@@ -4,7 +4,7 @@
       "address": "123 Silicon Valley, San Francisco, CA 94105",
       "phone": "+1 (800) 555-1234",
       "website": "https://techinnovations.com",
-      "image": "tech-innovations.png",
+      "image": "images/tech-innovations.png",
       "membership_level": 3,
       "additional_info": "Leading provider of innovative technology solutions."
     },
@@ -13,7 +13,7 @@
       "address": "456 Greenway Blvd, San Diego, CA 92101",
       "phone": "+1 (800) 555-5678",
       "website": "https://greenenergysolutions.com",
-      "image": "Green-Energy-Solutions.png",
+      "image": "images/Green-Energy-Solutions.png",
       "membership_level": 2,
       "additional_info": "Committed to renewable energy and sustainability."
     },
@@ -22,7 +22,7 @@
       "address": "789 Construction Ave, Los Angeles, CA 90001",
       "phone": "+1 (800) 555-9876",
       "website": "https://urbanbuilders.com",
-      "image": "urban.jpeg",
+      "image": "images/urban.jpeg",
       "membership_level": 1,
       "additional_info": "Specializing in urban development and commercial construction."
     },
@@ -31,7 +31,7 @@
       "address": "101 Healthy St, New York, NY 10001",
       "phone": "+1 (212) 555-2345",
       "website": "https://healthyeatscafe.com",
-      "image": "healthy.jpeg",
+      "image": "images/healthy.jpeg",
       "membership_level": 2,
       "additional_info": "A cafe serving organic, fresh, and healthy food options."
     },
@@ -40,7 +40,7 @@
       "address": "202 Learning Rd, Chicago, IL 60605",
       "phone": "+1 (312) 555-6789",
       "website": "https://brightfutureacademy.com",
-      "image": "bright.png",
+      "image": "images/bright.png",
       "membership_level": 3,
       "additional_info": "Providing quality education and after-school programs for children."
     },
@@ -49,7 +49,7 @@
       "address": "303 Fashion Ave, Miami, FL 33101",
       "phone": "+1 (305) 555-3456",
       "website": "https://fashionforward.com",
-      "image": "fashion-forward.png",
+      "image": "images/fashion-forward.png",
       "membership_level": 1,
       "additional_info": "Trendy clothing store offering the latest in fashion."
     },
@@ -58,7 +58,7 @@
       "address": "404 Hospitality Ln, Boston, MA 02115",
       "phone": "+1 (617) 555-4567",
       "website": "https://cityhotelgroup.com",
-      "image": "hotel.jpeg",
+      "image": "images/hotel.jpeg",
       "membership_level": 2,
       "additional_info": "Luxury hotels providing world-class services and amenities."
     }
