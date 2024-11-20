@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/home.css"/>
 
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +50,36 @@
                 <a href="" class="btn">Learn More</a>
             </div>
         </section>
+
+        <div class="card-grid">
+            <div class="card event-card">
+                <h2>Current Events</h2>
+                <p>**</p>
+                <p>**</p>
+                <p>**</p>
+
+            </div>
+    
+            <!-- Weather Card -->
+            <div id="weather" class="weather-card">
+                <h2 class="weather-title">Weather for Chamber Location</h2>
+                <p id="current-temp" class="weather-current-temp">Current Temperature: </p>
+                <p id="weather-description" class="weather-description">Weather: </p>
+                <div id="forecast" class="forecast-container">
+                  <h3 class="forecast-title">3-Day Forecast:</h3>
+                  <ul class="forecast-list">
+                    <li id="day1" class="forecast-item">Day 1: </li>
+                    <li id="day2" class="forecast-item">Day 2: </li>
+                    <li id="day3" class="forecast-item">Day 3: </li>
+                  </ul>
+                </div>
+            </div>           
+
+            <div id="business-spotlights" class="spotlight-cards">
+
+            </div>
+
+        </div>
 
     </main>
 
