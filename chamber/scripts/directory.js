@@ -8,7 +8,7 @@ document.getElementById("lastModified").innerHTML = lastModified;
 // functions
 async function fetchMembers() {
     try {
-        const response = await fetch('data/members.json');
+        const response = await fetch('data/members-directory.json');
 
         if (!response.ok) {
             throw new Error('Failed to fetch members data');
@@ -29,7 +29,7 @@ function displayMembers(members) {
         memberCard.classList.add('member-card');  
 
         memberCard.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" class="member-logo">
+            <img src="images/${member.image}" alt="${member.name} logo" class="member-logo" onError="this.onerror=null; this.src='images/placeholder.png';">
             <h2>${member.name}</h2>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> <a href="tel:${member.phone}">${member.phone}</a></p>
@@ -51,22 +51,29 @@ function getMembershipLevel(level) {
     }
 }
 
-document.getElementById('toggle-view').addEventListener('click', function() {
-    const container = document.getElementById('members-container');
-    const currentView = container.classList.contains('grid-view');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleViewButton = document.getElementById('toggle-view');
+    if (toggleViewButton) {
+        toggleViewButton.addEventListener('click', function() {
+            const container = document.getElementById('members-container');
+            const currentView = container.classList.contains('grid-view');
 
-    if (currentView) {
-        container.classList.remove('grid-view');
-        container.classList.add('list-view');
-        this.textContent = 'Switch to Grid View';
-    } else {
-        container.classList.remove('list-view');
-        container.classList.add('grid-view');
-        this.textContent = 'Switch to List View';
+            if (currentView) {
+                container.classList.remove('grid-view');
+                container.classList.add('list-view');
+                this.textContent = 'Switch to Grid View';
+            } else {
+                container.classList.remove('list-view');
+                container.classList.add('grid-view');
+                this.textContent = 'Switch to List View';
+            }
+        });
+    }
+
+    fetchMembers();
+
+    const membersContainer = document.getElementById('members-container');
+    if (membersContainer) {
+        membersContainer.classList.add('grid-view');
     }
 });
-
-window.onload = function() {
-    fetchMembers();
-    document.getElementById('members-container').classList.add('grid-view');  
-};
