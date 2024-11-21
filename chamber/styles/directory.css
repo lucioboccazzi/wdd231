@@ -25,7 +25,7 @@ header, footer {
 
 /* Header Styles */
 header {
-    background: #3633c5; 
+    background: #21075f; 
     padding-top: 1rem;
     font-size: 1rem;
     color: #ffffff;  
@@ -36,7 +36,7 @@ header {
     margin: 1rem auto 2rem;
     display: flex;
     justify-content: space-evenly;
-    background-color: #21075f;
+    background-color: #3633c5;
 }
 
 .nav-links a {
@@ -56,7 +56,7 @@ header {
 
 /* Footer Styles */
 footer {
-    background: #21075f;
+    background: #0f0033;
     padding: 1rem;
     text-align: center;
     font-size: 0.5rem;
