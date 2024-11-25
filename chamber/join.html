@@ -19,7 +19,9 @@
         <!-- Styles, Scripts and Fonts -->
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/directory.css"/>
-        <script src="scripts/directory.js" defer></script>
+        <link rel="stylesheet" href="styles/join.css"/>
+
+        <script src="scripts/join.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +41,58 @@
     </header>
 
     <main>
+        <main>
+            <h2>Membership Application Form</h2>
+            <form method="GET" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+    
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name" required>
+    
+                    <label for="org-title">Organizational Title:</label>
+                    <input type="text" id="org-title" name="org-title" title="Organizational Title" pattern="[A-Za-z\s\-]{7,}" required autocomplete="organization-title">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" title="Email Address" autocomplete="email" required placeholder="example@example.com">
+    
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" title="Mobile Number" autocomplete="tel" required>
+    
+                    <label for="business-name">Business Name:</label>
+                    <input type="text" id="business-name" name="business-name" title="Business Name" autocomplete="organization" required>
+    
+                    <label for="membership-level">Membership Level:</label>
+                    <select name="membership-level" id="membership-level">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+    
+                    <label for="description">Business Description:</label>
+                    <textarea id="description" name="description" title="Business Description"></textarea>
+    
+                    <input type="hidden" id="timestamp" name="timestamp" value="<?= date('Y-m-d H:i:s'); ?>">
+    
+                    <input type="submit" value="Submit Application" title="Submit your membership application">
+                </fieldset>
+            </form>
+    
+            <div class="membership-cards">
+
+            </div>
+    
+            <div id="npModal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal('npModal')">&times;</span>
+                    <h2>NP Membership Benefits</h2>
+                    <p>Special events, networking opportunities, and more...</p>
+                </div>
+            </div>
 
     </main>
 
