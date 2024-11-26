@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Chamber of Commerce - Join</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Chamber of Commerce. Lucio Boccazzi. This page is the page where you can provide your information to join." />
-    <meta name="author" content="Lucio Boccazzi" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamber of Commerce - Join</title>
+
     <link rel="icon" href="favicon.ico">
 
-    <!-- Social media meta tags -->
-    <meta property="og:title" content="CABA - Chamber of Commerce" />
-    <meta name="twitter:title" content="CABA - Chamber of Commerce" />
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:image" content="images/CABA-image.jpg" />
-    <meta name="twitter:image" content="images/CABA-image.jpg" />
-    <meta property="og:url" content="https://example.com/join" />
-    <meta name="twitter:url" content="https://example.com/join" />
-
-    <!-- Styles, Scripts, and Fonts -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/directory.css"/>
     <link rel="stylesheet" href="styles/join.css"/>
 
     <script src="scripts/join.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
+
     <header>
         <h1>Chamber of Commerce - Join Us</h1>
 
@@ -44,9 +29,8 @@
     </header>
 
     <main>
-
         <h2>Membership Application Form</h2>
-        <form method="GET" action="thankyou.html">
+        <form method="GET" id="membership-form">
             <fieldset>
                 <legend>Personal Information</legend>
 
@@ -79,15 +63,13 @@
                 <label for="description">Business Description:</label>
                 <textarea id="description" name="description" title="Business Description"></textarea>
 
-                <input type="hidden" id="timestamp" name="timestamp" value="<?= date('Y-m-d H:i:s'); ?>">
+                <input type="hidden" id="timestamp" name="timestamp">
 
                 <input type="submit" value="Submit Application" title="Submit your membership application">
             </fieldset>
         </form>
 
-        <div class="membership-cards">
-
-        </div>
+        <div class="membership-cards"></div>
 
         <div id="npModal" class="modal">
             <div class="modal-content">

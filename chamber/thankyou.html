@@ -8,28 +8,13 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <!-- Social media meta tags -->
-    <meta property="og:title" content="CABA - Chamber of Commerce" />
-    <meta name="twitter:title" content="CABA - Chamber of Commerce" />
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:image" content="images/CABA-image.jpg" />
-    <meta name="twitter:image" content="images/CABA-image.jpg" />
-    <meta property="og:url" content="" />
-    <meta name="twitter:url" content="" />
-
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/directory.css"/>
     <link rel="stylesheet" href="styles/join.css"/>
 
     <script src="scripts/join.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
 
     <header>
@@ -48,12 +33,14 @@
         <p>Thank you for submitting your membership application! Below are the details you entered:</p>
 
         <div class="thankyou-details">
-            <p><strong>First Name:</strong> <?php echo htmlspecialchars($_GET['first-name']); ?></p>
-            <p><strong>Last Name:</strong> <?php echo htmlspecialchars($_GET['last-name']); ?></p>
-            <p><strong>Email Address:</strong> <?php echo htmlspecialchars($_GET['email']); ?></p>
-            <p><strong>Mobile Number:</strong> <?php echo htmlspecialchars($_GET['mobile']); ?></p>
-            <p><strong>Business Name:</strong> <?php echo htmlspecialchars($_GET['business-name']); ?></p>
-            <p><strong>Application Submitted On:</strong> <?php echo htmlspecialchars($_GET['timestamp']); ?></p>
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email Address:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+            <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+            <p><strong>Membership Level:</strong> <span id="membership-level"></span></p>
+            <p><strong>Business Description:</strong> <span id="description"></span></p>
+            <p><strong>Application Submitted On:</strong> <span id="timestamp"></span></p>
         </div>
 
         <p>If the information is correct, we will process your membership application shortly. If you need to make any changes, feel free to contact us.</p>
