@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header {
+    background: #030ea6; 
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #ffffff;  
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #134bba; 
+    padding: 5px 0; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 10px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #58b1ff; 
+}
+
+/* main */
+main {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #2f2f2f; 
+    background-color: #c8dffc;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.purpose {
+    border: 3px solid #000000; 
+    color: #333;  
+}
+
+.scenarios {
+    border: 3px solid #000000; 
+    color: #333; 
+}
+
+/* Footer */
+footer {
+    background: 30ea6;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.5rem;
+    background: #030ea6; 
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    padding-right: 20px;
+    color:#ffffff;
+}
