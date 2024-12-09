@@ -1,9 +1,10 @@
+/* Hero Section */
 .hero {
     background-image: url('https://www.diariopanorama.com/fotos/cache/notas/2022/12/18/1010x567_messi-copa-mundo-434474-193021.jpg'); 
     background-size: cover; 
     background-position: center top;
     background-repeat: no-repeat;
-    height: 75vh; 
+    height: 75vh; /* Hero height for larger screens */
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -34,11 +35,11 @@
     border-left: 5px solid #FF7F50;  
     color: #333;  
     padding: 20px;
-    width: 25rem;  
+    width: 100%;  /* Full width */
+    max-width: 60rem;  /* Limit width on larger screens */
     margin-top: -1rem;  
     border-radius: 8px;  
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
-    margin-left: -1rem;  
 }
 
 /* Event Card Link Styling */
@@ -55,9 +56,74 @@
 
 /* Card Grid */
 .card-grid {
-    display: flex;
-    justify-content: center; 
+    display: grid;  /* Using grid for better control */
+    grid-template-columns: 1fr;  /* Single column by default on mobile */
+    gap: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    gap: 2rem;  
+}
+
+/* Media Queries for Larger Screens */
+
+/* Tablets and Up (600px and above) */
+@media (min-width: 600px) {
+    .hero {
+        height: 60vh; /* Slightly smaller hero image on tablets */
+    }
+
+    .hero-container {
+        flex-direction: row; /* Align hero content horizontally on tablets */
+        justify-content: space-between;
+    }
+
+    .event-card {
+        width: 100%; /* Make event card full width */
+        max-width: 25rem; /* Limit max width of event card */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);  /* Two columns for tablets */
+        gap: 1rem;
+    }
+}
+
+/* Desktops and Up (900px and above) */
+@media (min-width: 900px) {
+    .hero {
+        height: 75vh; /* Larger hero image on desktop */
+    }
+
+    .hero-container {
+        justify-content: space-around; /* Even space between content */
+    }
+
+    .event-card {
+        width: 100%; /* Ensure event card takes full width */
+        max-width: 30rem; /* Increase max-width on larger screens */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);  /* Three columns on desktop */
+        gap: 2rem;  /* Larger gap between cards */
+    }
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 600px) {
+    /* Hero Image Adjustment for smaller screens */
+    .hero {
+        height: auto; /* Allow hero image to scale down automatically */
+        min-height: 200px; /* Minimum height to keep the hero image visible */
+    }
+
+    /* Event Card Adjustment */
+    .card-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    /* Move event card below hero image on mobile */
+    .event-card {
+        margin-top: 1rem; /* Adds space between hero and event card */
+        order: 1; /* Ensures event card moves below hero image */
+    }
 }
