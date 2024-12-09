@@ -31,7 +31,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0A74DA;
+    background-color: #003366;
     padding: 5px 0;
 }
 
@@ -89,11 +89,11 @@ main {
 
 /* Footer */
 footer {
-    background-color: #0A74DA;
+    background-color: #003366;  
     padding: 1rem;
     text-align: center;
     font-size: 1rem;
-    color: white;
+    color: white; 
 }
 
 footer p {
