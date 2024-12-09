@@ -1,0 +1,17 @@
+.hero {
+    background-image: url('https://www.diariopanorama.com/fotos/cache/notas/2022/12/18/1010x567_messi-copa-mundo-434474-193021.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
