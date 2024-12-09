@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@100..900&family=Merriweather:wght@400..700&display=swap');
 
-/* Body */
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
@@ -10,7 +9,6 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #0A74DA;  
     padding-top: 1rem;
@@ -19,7 +17,6 @@ header {
     text-align: center;
 }
 
-/* Header h1 */
 header h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
@@ -27,7 +24,6 @@ header h1 {
     margin: 0;
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     flex-direction: column; 
@@ -52,7 +48,6 @@ header h1 {
     background-color: #FF7F50;
 }
 
-/* Main */
 main {
     padding: 1rem;
     font-size: 1rem;
@@ -60,7 +55,6 @@ main {
     background-color: #e1f5fe;
 }
 
-/* Card Grid */
 .card-grid {
     display: grid;
     grid-template-columns: 1fr; 
@@ -68,7 +62,6 @@ main {
     margin-bottom: 2rem;
 }
 
-/* Purpose Section */
 .purpose {
     border: 3px solid #0A74DA;
     padding: 1rem;
@@ -80,7 +73,6 @@ main {
     color: #0A74DA;
 }
 
-/* Scenarios Section */
 .scenarios {
     border: 3px solid #FF7F50;
     padding: 1rem;
@@ -92,7 +84,6 @@ main {
     color: #FF7F50;
 }
 
-/* Footer */
 footer {
     background-color: #003366;  
     padding: 1rem;
@@ -108,7 +99,6 @@ footer p {
 }
 
 @media (min-width: 600px) {
-    /* Navigation Links */
     .nav-links {
         flex-direction: row; 
         justify-content: space-around; 
