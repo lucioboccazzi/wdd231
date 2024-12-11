@@ -1,13 +1,13 @@
 .card-grid-sport {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .sport {
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 2px solid #0A74DA;
@@ -85,8 +85,7 @@
 .contact-info {
     background-color: #64b4ff;
     color: #ffffff;
-    padding: 0.75rem;
-    margin-top: 1rem;
+    padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border: 2px solid #0A74DA;
