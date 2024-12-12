@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('membership-form');
+    const form = document.getElementById('application-form');
 
     const timestampField = document.getElementById('timestamp');
+    const today = new Date(); 
     timestampField.value = today.toISOString();
 
     if (form) {
@@ -24,9 +25,8 @@ if (window.location.pathname.includes('thankyou.html')) {
     document.getElementById('last-name').textContent = params.get('last-name');
     document.getElementById('email').textContent = params.get('email');
     document.getElementById('mobile').textContent = params.get('mobile');
-    document.getElementById('business-name').textContent = params.get('business-name');
-    document.getElementById('membership-level').textContent = params.get('membership-level');
-    document.getElementById('description').textContent = params.get('description');
+    document.getElementById('selected-individual-sport').textContent = params.get('selected-individual-sport');
+    document.getElementById('selected-team-sport').textContent = params.get('selected-team-sport');
     document.getElementById('timestamp').textContent = params.get('timestamp');
 }
 
