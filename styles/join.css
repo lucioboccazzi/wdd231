@@ -88,26 +88,6 @@ form select {
     cursor: pointer;
 }
 
-.purpose, .scenarios {
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.purpose {
-    border: 3px solid #0A74DA;
-}
-
-.scenarios {
-    border: 3px solid #FF7F50;
-}
-
-.purpose h1, .scenarios h1 {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 0;
-}
-
 @media (min-width: 600px) {
     .nav-links {
         flex-direction: row;

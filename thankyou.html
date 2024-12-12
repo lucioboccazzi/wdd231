@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Sports</title>
+        <meta name="description" content="WDD 231 - Web Frontend Development I. Lucio Boccazzi. This is the page gives you the option to join and get more information on the sports." />
+        <meta name="author" content="Lucio Boccazzi" />
+        
+        <meta property="og:title" content="Chamber of Sports" />
+        <meta name="twitter:title" content="Chamber of Sports" />
+        <meta property="og:website" content="website"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="images/messi-coup.jpg" />
+        <meta name="twitter:image" content="images/messi-coup.jpg" />
+        <meta property="og:url" content="" />
+        <meta name="twitter:url" content="" />
+        
+        <link rel="stylesheet" href="styles/project.css"/>
+        <link rel="stylesheet" href="styles/join.css"/>
+        
+        <script src="scripts/final-project-general.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+    
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" as="style" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>    
+
+<body>
+    <header>
+        <h1>Team Sports - Chamber of Sports</h1>
+        <nav class="nav-links" id="nav-links" role="navigation">
+            <a href="https://lucioboccazzi.github.io/wdd231/project.html" title="Go to Home Page">Home</a>
+            <a href="https://lucioboccazzi.github.io/wdd231/team-sports.html" title="Learn about Team Sports">Team Sports</a>
+            <a href="https://lucioboccazzi.github.io/wdd231/individual-spots.html" title="Learn about Individual Sports">Individual Sports</a>
+            <a href="https://lucioboccazzi.github.io/wdd231/join-sports.html" title="Join the Sports Community">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Sport Application Details</h2>
+        <p>Thank you for submitting your sport application! Below are the details you entered:</p>
+
+        <div class="thankyou-details">
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email Address:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+            <p><strong>Individual Sport:</strong> <span id="selected-individual-sport"></span></p>
+            <p><strong>Team Sport:</strong> <span id="selected-team-sport"></span></p>
+            <p><strong>Application Submitted On:</strong> <span id="timestamp"></span></p>
+        </div>
+
+        <p>If the information is correct, we will process your application shortly. If you need to make any changes, feel free to contact us.</p>
+        
+    </main>
+
+    <footer>
+        <p>Contact Information:</p>
+        <p>© <span id="year"></span> - Lucio Boccazzi - Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
